@@ -35,12 +35,14 @@ function ProjectsPage() {
                 Spaces crafted to elevate customer experiences and operational efficiency.
               </Typography>
             </Stack>
+            <Grid item xs={12} md={6}>
             <Grid container spacing={3}>
               {commercial.map((project) => (
                 <Grid item xs={12} md={4} key={project.id}>
                   <ProjectCard {...project} />
                 </Grid>
               ))}
+            </Grid>
             </Grid>
 
             <Stack spacing={2} textAlign="center">
@@ -51,12 +53,14 @@ function ProjectsPage() {
                 Homes renewed with thoughtful design and high-quality finishes.
               </Typography>
             </Stack>
+            <Grid item xs={12} md={6}>
             <Grid container spacing={3}>
               {residential.map((project) => (
                 <Grid item xs={12} md={4} key={project.id}>
                   <ProjectCard {...project} />
                 </Grid>
               ))}
+            </Grid>
             </Grid>
           </Stack>
         </Container>

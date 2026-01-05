@@ -108,6 +108,7 @@ function HomePage() {
                 Comprehensive construction services with transparent communication and meticulous execution.
               </Typography>
             </Stack>
+            <Grid item xs={12} md={6}>
             <Grid container spacing={3}>
               {servicesData.services.map((service) => (
                 <Grid item xs={12} md={4} key={service.title}>
@@ -118,6 +119,7 @@ function HomePage() {
                   />
                 </Grid>
               ))}
+            </Grid>
             </Grid>
           </Stack>
         </Container>
@@ -201,6 +203,7 @@ function HomePage() {
             <Typography variant="h4" fontWeight={800} color="text.primary">
               What we stand for
             </Typography>
+            <Grid item xs={12} md={6}>
             <Grid container spacing={3}>
               {pillars.map((pillar) => (
                 <Grid item xs={12} sm={4} key={pillar.title}>
@@ -215,6 +218,7 @@ function HomePage() {
                 </Grid>
               ))}
             </Grid>
+            </Grid>
           </Stack>
         </Container>
       </Box>
@@ -228,12 +232,14 @@ function HomePage() {
             <Typography color="primary.contrastText" sx={{ opacity: 0.9 }}>
               A snapshot of our recent commercial and residential work.
             </Typography>
+            <Grid item xs={12} md={6}>
             <Grid container spacing={3}>
               {featuredProjects.map((project) => (
                 <Grid item xs={12} md={4} key={project.id}>
                   <ProjectCard {...project} />
                 </Grid>
               ))}
+            </Grid>
             </Grid>
             <Button
               component={RouterLink}
