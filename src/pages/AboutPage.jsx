@@ -45,7 +45,7 @@ const initials = (name) =>
     .join('')
     .toUpperCase();
 
-const phoneLink = `tel:${company.phone.replace(/[^\d+]/g, '')}`;
+const contactLink = '/#contact';
 
 const heroImage = 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1600&q=80';
 
@@ -56,7 +56,7 @@ function AboutPage() {
         title={`Meet the Team at ${company.name}`}
         subtitle="People who plan, manage, and deliver your builds across Georgia."
         ctaLabel="Talk with us"
-        ctaTo={phoneLink}
+        ctaTo={contactLink}
         bgImage={heroImage}
       />
 

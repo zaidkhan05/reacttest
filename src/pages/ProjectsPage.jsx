@@ -6,14 +6,13 @@ import Box from '@mui/material/Box';
 import Hero from '../components/Hero';
 import ProjectCard from '../components/ProjectCard';
 import projectsData from '../data/projects.json';
-import company from '../data/companyinfo.json';
 
 function ProjectsPage() {
   const commercial = projectsData.projects.filter((p) => p.type === 'Commercial');
   const residential = projectsData.projects.filter((p) => p.type === 'Residential');
 
   const heroImage = '/motwalph.png';
-  const phoneLink = `tel:${company.phone.replace(/[^\d+]/g, '')}`;
+  const contactLink = '/#contact';
 
   return (
     <>
@@ -21,7 +20,7 @@ function ProjectsPage() {
         title="Our Projects"
         subtitle="Explore our commercial and residential work."
         ctaLabel="Discuss your project"
-        ctaTo={phoneLink}
+        ctaTo={contactLink}
         bgImage={heroImage}
       />
 
